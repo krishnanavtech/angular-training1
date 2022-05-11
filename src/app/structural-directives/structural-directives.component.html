@@ -1,0 +1,82 @@
+<div class="card1">
+    <p>structural-directives works! if else conditions</p>
+
+    <h2 *ngIf="showH1=='show' then firstblock else secondblock"> This is *ngIf</h2>
+
+    <ng-template #firstblock>
+        <h2>
+            First block
+        </h2>
+    </ng-template>
+    <ng-template #secondblock>
+        <h2>
+            else block / second block
+        </h2>
+    </ng-template>
+</div>
+<hr class="plain">
+
+<!-- Two way binding with if conditions -->
+<div class="card2">
+    <p>Two way binding with if conditions</p>
+    <div class="card">
+        <Label> textfield</Label> &nbsp; &nbsp;<input type="text" [(ngModel)]="dataOfTextfield">
+    </div>
+
+    <ng-template [ngIf]="dataOfTextfield == 'red'">
+        <h2 style="color: red;">red color block
+        </h2>
+    </ng-template>
+
+    <ng-template [ngIf]="dataOfTextfield == 'green'">
+        <h2 style="color: green;">green color block
+        </h2>
+    </ng-template>
+
+    <ng-template [ngIf]="dataOfTextfield == 'blue'">
+        <h2 style="color: blue;">blue color block
+        </h2>
+    </ng-template>
+</div>
+<hr class="plain">
+
+
+<!-- Implementing ngFor  -->
+<div class="card3">
+    <p>ngFor demonstration</p>
+    <table class="ngforTable">
+        <thead>
+            <th>Name </th>
+            <th>Age</th>
+        </thead>
+        <tr *ngFor="let element of tableDataArray; trackBy:userslistTrack">
+            <td>{{element.name}}</td>
+            <td>{{element.age}}</td>
+        </tr>
+    </table>
+    <br>
+    <button (click)="refreshTable()">Refresh table</button>
+
+    <button (click)="addItemInList()">add Item in aray</button>
+</div>
+<hr class="plain">
+
+<!-- Implementing ngSwitch -->
+<div class="card4">
+    <p>ngSwitch demonstration</p>
+
+    <div style="flex: content;">
+        <button (click)="onClickYellow()"> click yellow</button>
+        <button (click)="onClickPurple()"> click purple</button>
+        <button (click)="onClickBrown()"> click brown</button>
+        <button (click)="onClickDarkgrey()"> click darkgray</button>
+    </div>
+
+    <div class="switch" [ngSwitch]="case">
+        <hr class="boxhr" *ngSwitchCase="'yellow'" style="color: yellow;">
+        <hr class="boxhr" *ngSwitchCase="'purple'" style="color: purple;">
+        <hr class="boxhr" *ngSwitchCase="'brown'" style="color: brown;">
+        <hr class="boxhr" *ngSwitchCase="'darkgray'" style="color: grey;">
+    </div>
+</div>
+<hr>

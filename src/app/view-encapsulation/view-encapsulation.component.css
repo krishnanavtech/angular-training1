@@ -1,0 +1,20 @@
+/* 
+    viewEncapsulation : None
+    viewEncapsulation : Emulated
+    viewEncapsulation : ShadowDown
+*/
+
+.view-component {
+    text-align: center;
+    border: solid 2px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.component-container {
+    display: flex;
+    text-align: center;
+}

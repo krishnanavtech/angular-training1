@@ -1,0 +1,57 @@
+/*  make if confition boolean
+    make if else condition 
+    make condition with string
+    make else if condition
+    make condition with property binding
+    make if condition with two way binding
+*/
+
+
+/*  ngFor
+    make a array
+    apply for loop with array
+    make a array with object
+    apply for loop with array of object to a table
+*/
+
+.card1 {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.card2 {
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+.card3 {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.plain {
+    border: solid 1px;
+    color: bisque;
+}
+
+.boxhr {
+    border: solid 20px;
+    width: 30%;
+}
+
+.card4 {
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+.ngforTable {
+    width: 400px;
+}
+
+.ngforTable th {
+    width: 50px;
+}
+
+.ngforTable td {
+    width: 50px;
+}

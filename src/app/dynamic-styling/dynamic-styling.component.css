@@ -1,0 +1,18 @@
+   tr,
+   th,
+   td {
+       border: solid 1px;
+       padding: 8px;
+       text-align: left;
+   }
+   
+   table {
+       width: 400px;
+       border-collapse: collapse;
+       padding: 8px
+   }
+   
+   .customChange {
+       background-color: bisque;
+       color: brown;
+   }
