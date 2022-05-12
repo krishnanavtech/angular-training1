@@ -20,7 +20,7 @@ export class DynamicStylingComponent implements OnInit {
      },
      {
       name:'navin',
-      dept:'designing',
+      dept:'management',
       salary:10000
     },
      {
@@ -30,12 +30,12 @@ export class DynamicStylingComponent implements OnInit {
     },
     {
       name:'karthik',
-      dept:'sales',
+      dept:'marketing',
       salary:4000
     },
     {
       name:'aishwarya',
-      dept:'designing',
+      dept:'marketing',
       salary:5000
     }
   ]

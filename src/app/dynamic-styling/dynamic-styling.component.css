@@ -13,6 +13,32 @@
    }
    
    .customChange {
-       background-color: bisque;
+       background-color: red;
        color: brown;
+   }
+   
+   .newstyle {
+       background-color: green;
+       color: white;
+   }
+   
+   .newstyle1 {
+       background-color: red;
+       color: yellow;
+   }
+   
+   .bg1 {
+       background-color: red;
+   }
+   
+   .bg {
+       background-color: green;
+   }
+   
+   .text {
+       color: yellow
+   }
+   
+   .text1 {
+       color: white
    }

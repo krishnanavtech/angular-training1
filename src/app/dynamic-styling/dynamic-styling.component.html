@@ -8,11 +8,16 @@
             <th> Salary </th>
         </thead>
         <tbody>
-            <tr *ngFor="let item of data">
+            <tr *ngFor="let item of data" [ngClass]="[item.dept==='management'?'bg': 'bg1', item.salary<3000?'text': 'text1']">
                 <td>{{item.name}}</td>
-                <td [ngClass]="{'customChange':item.dept==='designing'}">{{item.dept}}</td>
-                <td [ngStyle]="{'background-color': item.salary>3000?'red':'green'}">{{item.salary}}</td>
+                <td> {{item.dept}}</td>
+                <!-- <td [ngClass]="{'customChange':item.dept==='designing'}">{{item.dept}}</td> -->
+                <!-- <td [ngClass]="{'newstyle': item.salary>3000 }">{{item.salary}}</td> -->
+                <td>{{item.salary}}</td>
             </tr>
         </tbody>
     </table>
 </div>
+<!-- dep:magmt = backgounf gree 
+    marketing backgrounf red
+-->
